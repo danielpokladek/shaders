@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Pixel-PaletteSwap
+  m_Name: New Material
   m_Shader: {fileID: 4800000, guid: a4880bd3d4ac5eb4f8e463dc59435475, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -40,11 +40,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _GradientTex:
-        m_Texture: {fileID: 2800000, guid: 5ea90dd761694a14c933df27f5e05e79, type: 3}
+        m_Texture: {fileID: 2800000, guid: dc5b2eaeffd100e44915d70b364fefd2, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 3db810de1e528c44eb77339278c55f9c, type: 3}
+        m_Texture: {fileID: 2800000, guid: 517ed0abedf28e8439c34d7dddadb0d3, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:

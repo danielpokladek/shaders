@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pixel-base 1
+  m_Name: terrain-inv
   m_Shader: {fileID: 4800000, guid: a4880bd3d4ac5eb4f8e463dc59435475, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -20,14 +20,13 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _GradientTex:
-        m_Texture: {fileID: 2800000, guid: 5a98963897cb2e9498efe6c2af3d3698, type: 3}
+        m_Texture: {fileID: 2800000, guid: 542699c87e70ada4f98326b81f04164a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 290ec5638ce7d7e4a967b9025bd01216, type: 3}
+        m_Texture: {fileID: 2800000, guid: 849604155383676419ceef977d7470df, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _Speed: 8
+    m_Floats: []
     m_Colors: []
   m_BuildTextureStacks: []

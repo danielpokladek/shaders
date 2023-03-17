@@ -4,6 +4,7 @@ Shader "Unlit/PaletteSwap"
     {
         _MainTex ("Base Texture", 2D) = "white" {}
         _GradientTex ("Gradient Texture", 2D) = "white" {}
+        _Speed ("Speed", float) = 1
     }
     SubShader
     {
@@ -29,6 +30,8 @@ Shader "Unlit/PaletteSwap"
                 float4 vertex : SV_POSITION;
             };
 
+            float _Speed;
+
             float4 _MainTex_ST;
 
             sampler2D _MainTex;
@@ -45,9 +48,15 @@ Shader "Unlit/PaletteSwap"
             fixed4 frag (v2f i) : SV_Target
             {
                 fixed baseTexture = tex2D(_MainTex, i.uv).r;
-                fixed4 gradientTexture = tex2D(_GradientTex, float2(baseTexture, 0));
 
+                float2 gradientUVs = float2(fmod(baseTexture + (_Time.x * _Speed), 1), 0);
+                // float2 gradientUVs = float2(baseTexture, 0.5);
+
+                fixed4 gradientTexture = tex2D(_GradientTex, gradientUVs);
+
+                // return float4(gradientUVs.x, 0, 0, 1);
                 return gradientTexture;
+                // return float4(baseTexture, baseTexture, baseTexture, 1);
             }
             ENDCG
         }
